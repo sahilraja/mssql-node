@@ -1,5 +1,5 @@
 import { SurveyModel } from "./survey-model";
-import { Op, fn, literal, col } from "sequelize";
+import { Op } from "sequelize";
 import { APIError } from "../utils/custom_error";
 
 export async function readSurvey(id: any) {
@@ -89,10 +89,3 @@ export async function updateSurvey(id: any, payload: any) {
     await SurveyModel.update(payload, { where: { id: parseInt(id) } });
     return await readSurvey(id);
 }
-
-type surveyDocument = {
-    dataValues: {
-        id: Number;
-        survey_id: string;
-    };
-};
