@@ -1,16 +1,25 @@
 # Introduction
 This is a starter project to quickly get up and running with express js project using typescript.
 
-# Install mongodb in local system
+# Install mssql in local system
 ```
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition-using-deb-packages 
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
 
-mongodb version: >=3.4.24
+Run ms server in local system
+
 ```
+
+# Install nodejs stable local system
+```
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
+
+```
+
+
 
 # Setup
 ```sh
-git clone git@git.webileapps.com:js/appx-api.git
+git clone https://github.com/sahilraja/mssql-node.git
 
 "Install Packages"
     npm install
@@ -23,12 +32,12 @@ Open Visual Studio Code and Run (F5)
 
 # Adding routers
 
-A sample router for `users` is provided by default and mounted at `/users`.
+A sample router for `surveys` is provided by default and mounted at `/surveys`.
 ```typescript
-import * as usersRouter from "./users/router";
+import * as surveysRouter from "./surveys/router";
 ...
 
-app.use('/users', usersRouter);
+app.use('/surveys', surveysRouter);
 
 
 "Run Node Server using file in current working directory"
