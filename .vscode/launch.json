@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=8303872.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/main.ts",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ],
+            "env": {
+                "MONGO_URL": "mongodb://localhost:27017/sample_node",
+                //DEV URL
+                // "MONGO_URL": "",
+            }
+            // "sourceMaps": true
+        }
+    ]
+}

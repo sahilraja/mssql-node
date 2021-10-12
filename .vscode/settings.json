@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/**.js": {
+            "when": "$(basename).ts"
+        },
+        "node_modules": true,
+        "**/*.js.map": true
+    },
+    "editor.formatOnSave": true,
+    "prettier.proseWrap": "always"
+}

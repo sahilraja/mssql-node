@@ -1,0 +1,44 @@
+{
+    "name": "authentication",
+    "version": "1.0.0",
+    "description": "Reusable authentication plugin",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "./node_modules/typescript/bin/tsc; node main"
+    },
+    "dependencies": {
+        "@types/bcrypt-nodejs": "0.0.31",
+        "@types/bcryptjs": "^2.4.2",
+        "@types/cors": "^2.8.6",
+        "@types/express": "^4.17.3",
+        "@types/express-paginate": "^1.0.0",
+        "@types/mongoose": "^5.7.8",
+        "@types/mongoose-paginate": "^5.0.8",
+        "@types/morgan": "^1.9.0",
+        "bcrypt-nodejs": "0.0.3",
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-paginate": "^1.0.0",
+        "http": "0.0.1-security",
+        "http-status-codes": "^1.4.0",
+        "mongoose": "^5.9.6",
+        "mongoose-paginate": "^5.0.3",
+        "mongoose-transform": "^1.0.1",
+        "mongoose-unique-validator": "^2.0.3",
+        "morgan": "^1.10.0",
+        "morgan-body": "^2.4.8",
+        "mssql": "^7.2.1",
+        "sequelize": "^6.7.0",
+        "typescript": "^3.8.3",
+        "typings": "^2.1.1"
+    },
+    "author": "Sahil Raja",
+    "license": "Internet Systems Consortium (ISC).",
+    "devDependencies": {
+        "@types/geoip-lite": "^1.1.31",
+        "@types/mongoose-unique-validator": "^1.0.3",
+        "@types/multer": "^1.4.2"
+    }
+}
