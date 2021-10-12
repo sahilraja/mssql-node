@@ -11,8 +11,7 @@ Run ms server in local system
 
 # Install nodejs stable local system
 ```
-https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
-
+https://www.geeksforgeeks.org/installation-of-node-js-on-linux/
 ```
 
 
@@ -58,3 +57,28 @@ app.use('/surveys', surveysRouter);
 
 ```
 
+# Code Structure
+```sh
+
+
+"main.ts"
+    node server intialize file
+
+"api.ts"
+    Multiple Api Routers File
+    
+"app.ts"
+    npm modules defination file
+
+"database.ts"
+    Database Connection File
+
+"surveys"
+    module.ts -> where specific module db queries or functions defined
+    survey-model.ts -> where specific table/model  defined
+    router.ts -> where specific module routes defined
+
+"utils"
+    where custom Functions defined
+
+```
